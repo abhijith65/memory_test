@@ -13,7 +13,7 @@ class MemoryMazeViewModel extends BaseViewModel{
   late Timer countdownTimer;
   int currentLevel = 1;
   bool isGameOver = false;
-  bool _running=true;
+ // bool _running=true;
 
  // void checkOrder() {
 //     debugPrint('user ${userOrder.join()} words $shuffledWords');
@@ -82,7 +82,7 @@ class MemoryMazeViewModel extends BaseViewModel{
                   userOrder.clear();
                   shuffledWords.clear();
                   //shuffledWords.addAll(words);
-                 shuffledWords = words.subList(0,3+(currentLevel ~/ 5));
+                 shuffledWords = words.sublist(0,3+(currentLevel ~/ 5));
                   shuffledWords.shuffle();
                  // isMemorizationPhase = !isMemorizationPhase;
                   timer = 15;
